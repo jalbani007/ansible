@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: uninstall htop package
+    apt:
+      name: htop
+      state: absent
